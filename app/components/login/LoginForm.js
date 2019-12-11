@@ -11,6 +11,8 @@ import {
     TouchableOpacity,
     TouchableHighlight,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome'
+import { Input } from 'react-native-elements'
 
 var width = Dimensions.get('window').width;
 var height = Dimensions.get('window').height;
@@ -74,9 +76,11 @@ class LoginForm extends Component {
         this.refs.account.blur();
         this.refs.password.blur();
         if (this.state.account === null || this.state.account === "" || this.state.password === null || this.state.password === "") {
-            //Alert.alert("Please input username/password !");
+            Alert.alert("Please input username/password !");
+            return;
+        } else {
+            this.props.onPressLogin(this.state.account, this.state.password);
         }
-        this.props.onPressLogin(this.state.account, this.state.password);
     };
 }
 

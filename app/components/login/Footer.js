@@ -13,10 +13,10 @@ function Footer(props) {
     return (
         <View style={styles.footer}>
             <View>
-                <Text style={{ color: '#aaa' }}>Trendmicro@2019</Text>
+                <Text style={{ color: '#aaa', fontSize: 10 }}>Trendmicro@2019</Text>
             </View>
             <View>
-                <Text style={{ color: '#aaa' }}>Powered by React-Native</Text>
+                <Text style={{ color: '#aaa', fontSize: 10 }}>Powered by React-Native</Text>
             </View>
         </View>
     );
