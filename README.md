@@ -22,12 +22,11 @@ ReactNative实现跨平台移动APP开发。此project只是个简单demo。
 `yarn add react-native-elements react-native-vector-icons`<br/>
 `yarn add react-dom react-native-web`<br/>
 
-
 ## 难点记录
 1. *error Invalid regular expression: /(.*\\__fixtures__\\.*|node_modules[\\\]react[\\\]dist[\\\].*|website\\node_modules\\.*|heapCapture\\bundle\.js|.*\\__tests__\\.*)/: Unterminated character class SyntaxError: Invalid regular expression: /(.*\\__fixtures__\\.*|node_modules[\\\]react[\\\]dist[\\\].*|website\\node_modules\\.*|heapCapture\\bundle\.js|.*\\__tests__\\.*)$/: Unterminated character class*
-    1) node v12.10.0`
-    2) 修改 \node_modules\metro-config\src\defaults\blacklist.js [详细](https://stackoverflow.com/questions/58120990/how-to-resolve-the-error-on-react-native-start)
 
+    1) node 使用v12.10.0
+    2) 修改 \node_modules\metro-config\src\defaults\blacklist.js [详细](https://stackoverflow.com/questions/58120990/how-to-resolve-the-error-on-react-native-start)
 
 ## Demo演示
 ![image](https://github.com/WangYanfeng/MobileAppDemo/blob/master/demo_images/Login.png)
